@@ -1,0 +1,16 @@
+<script>
+    try{
+        let age=prompt("Enter Your Age")
+        age=Number.parseInt(age)
+        if(age>120){
+            throw new ReferenceError9("Not Allow")
+        }
+}
+catch(error){
+    console.log("Error")
+    console.log(error.name)
+    console.log(error.message)
+    console.log(error.stack)
+    console.log("Running")
+}
+</script>

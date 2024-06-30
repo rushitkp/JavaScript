@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<style>
+.bulb{
+    background: yellow;
+    }
+.bulbcontainer{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    }
+</style>
+<body>
+    <button onclick="alert('Click')">Click</button>
+    <button onclick="alert('Ok')">Ok<d/button>
+    <button onclick="alert('Done')">Done</button><br>
+    <h3>Events</h3>
+    <a href="https://Google.com"><button class="Google">Google</button></a>
+    <a href="https://Facebook.com"><button class="Facebook">Facebook</button></a>
+    <a href="https://Twiter.com"><button class="Twiter">Twiter</button></a>
+    <div id="bulb" class="bulbcontainer bulb"></div>
+<script>
+    document.getElementsByName("Google").addEventListener("click",function() {
+        let url="https://www.google.com/search?q=javascript"
+        win.focus()
+    })
+    setInterval(async function(){
+        document.querySelector("#bulb").classList.toggle("bulb")
+    },300)
+</script>    
+</body>
+</html> 
